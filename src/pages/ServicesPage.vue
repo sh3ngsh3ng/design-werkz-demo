@@ -7,12 +7,20 @@
             software projects to life! We do the design, research, testing
             for you so that you can focus on coding and building your million dollar application!</p>
         <p class="body-text">Below is a list of services we provide! </p>
+        <div class="accordion" id="accordionExample">
+            <ServiceAccordion text="Testing service 1"></ServiceAccordion>
+        </div>
+
     </div>
 </template>
 
 <script>
+    import ServiceAccordion from "../components/ServiceAccordion.vue"
     export default {
-        name: "ServicesPage"
+        name: "ServicesPage",
+        components: {
+            ServiceAccordion
+        }
     }
 </script>
 
