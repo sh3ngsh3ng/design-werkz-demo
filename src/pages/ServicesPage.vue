@@ -45,7 +45,7 @@
         }
 
         #service-page {
-            height: 80vh;
+            min-height: 80vh;
         }
     }
 </style>
