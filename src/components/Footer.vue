@@ -6,13 +6,13 @@
             <div class="footer-icons-div"><img class="social-media-logo" src="../assets/insta.png" /></div>
             <div class="footer-icons-div"><img class="social-media-logo" src="../assets/fb.png" /></div>
         </div>
-        <div class="footer-div"><span>Services</span></div>
-        <div class="footer-div"><span>About Us</span></div>
-        <div class="footer-div"><span>Company Porfolio</span></div>
-        <div class="footer-div"><span>Haw Foong's Portfolio</span></div>
-        <div class="footer-div"><span>Yong Sheng's Portfolio</span></div>
-        <div class="footer-div"><span>FAQ</span></div>
-        <div class="footer-div"><span>Terms of Use</span></div>
+        <div class="footer-div"><span @click="goToPage('/services')">Services</span></div>
+        <div class="footer-div"><span @click="goToPage('/about')">About Us</span></div>
+        <div class="footer-div"><span @click="goToPage('/portfolio')">Company Porfolio</span></div>
+        <div class="footer-div"><span @click="goToPage('/portfolio')">Haw Foong's Portfolio</span></div>
+        <div class="footer-div"><span @click="goToPage('/portfolio')">Yong Sheng's Portfolio</span></div>
+        <div class="footer-div"><span @click="goToPage('/faq')">FAQ</span></div>
+        <div class="footer-div"><span @click="goToPage('/terms')">Terms of Use</span></div>
     </footer>
 </template>
 

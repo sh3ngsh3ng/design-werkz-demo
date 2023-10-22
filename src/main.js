@@ -10,6 +10,7 @@ import MainPage from "@/pages/MainPage"
 import AboutUsPage from "@/pages/AboutUsPage"
 import ServicesPage from "@/pages/ServicesPage"
 import PortfolioPage from "@/pages/PortfolioPage"
+import ProgressPage from "@/pages/ProgressPage"
 
 const router = createRouter({
     history: createWebHistory(),
@@ -33,6 +34,11 @@ const router = createRouter({
             path: "/portfolio",
             name: "Portfolio",
             component: PortfolioPage
+        },
+        {
+            path: "/:pathMatch(.*)*",
+            name: "Not Found",
+            component: ProgressPage
         }
 
     ]
