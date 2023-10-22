@@ -7,7 +7,7 @@
             <div class="sub-section"><span class="main-heading">Outsource Design</span></div>
             <p class="body-text">Let us handle the UI/UX for your software projects! Just focus on coding and building
                 it!</p>
-            <button class="custom-btn">Services</button>
+            <button class="custom-btn" @click="goToPage('/services')">Services</button>
         </section>
         <section id="section-two" class="section">
             <div class="sub-section"><span class="sub-heading">Meet the Team</span></div>
@@ -22,7 +22,7 @@
                 <ContactCardSmall name="Yong Sheng" job="Software Engineer" title="Co-founder" pic="yong.png">
                 </ContactCardSmall>
             </div>
-            <button class="custom-btn"><span>Read more about the team here</span></button>
+            <button class="custom-btn" @click="goToPage('/about')"><span>Read more about the team here</span></button>
         </section>
     </div>
 </template>
