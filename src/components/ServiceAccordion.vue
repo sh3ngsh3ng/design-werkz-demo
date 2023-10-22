@@ -42,9 +42,11 @@
         data() {
             return {
                 services: [
-                    { title: "Brand Design", descr: ["Design", "TEst"] },
-                    { title: "Wireframes", descr: ["We build native and hybrid mobile apps."] },
-                    { title: "Interactive Prototype", descr: ["Design", "TEst"] }
+                    { title: "Brand Design", descr: ["Logo Design", "Brand Colours"] },
+                    { title: "Wireframes", descr: ["Wireframes of app/website", "Includes overall style such as text styles, colour schemes, spacing, etc"] },
+                    { title: "Interactive Prototype", descr: ["Wireframes rigged into interactable prototypes"] },
+                    { title: "User Research and Synthesis", descr: ["Research such as user interviews, surveys, etc", "Findings will be synthesized into a presentation deck with key findings"] },
+                    { title: "User Testing and Iterations", descr: ["Requires interactive prototype to be selected first", "User testing will be conducted on the prototypes to improve the design", "Consult with the team for a recommended number of iterations"] }
                 ]
             }
         }
@@ -57,7 +59,6 @@
     }
 
     .accordion-body {
-        background-color: red;
-        border-radius: 0px 0px 10px 10px;
+        background-color: #DFFFEA;
     }
 </style>
