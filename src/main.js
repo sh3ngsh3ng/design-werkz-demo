@@ -1,4 +1,53 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import { createRouter, createWebHistory } from "vue-router"
 
-createApp(App).mount('#app')
+
+
+import MainPage from "@/pages/MainPage"
+import AboutUsPage from "@/pages/AboutUsPage"
+import ServicesPage from "@/pages/ServicesPage"
+import PortfolioPage from "@/pages/PortfolioPage"
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+        {
+            path: "/",
+            name: "Home",
+            component: MainPage
+        },
+        {
+            path: "/about",
+            name: "About Us",
+            component: AboutUsPage
+        },
+        {
+            path: "/services",
+            name: "Services",
+            component: ServicesPage
+        },
+        {
+            path: "/portfolio",
+            name: "Portfolio",
+            component: PortfolioPage
+        }
+
+    ]
+})
+
+const globalAsset = {
+    methods: {
+        goToPage: function (page) {
+            this.$router.push(page)
+        }
+    },
+    data: function () {
+        return {
+            currentPage: 'test'
+        }
+    }
+}
+createApp(App).use(router).mixin(globalAsset).mount('#app')
