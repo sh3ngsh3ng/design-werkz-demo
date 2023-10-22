@@ -19,7 +19,10 @@
             Meet our 2 co-founders of WebFrames!
         </p>
         <div>
-            <BigCard title="Co-founder, UX/UI Designer"></BigCard>
+            <BigCard name="Haw Foong" title="Co-founder, UX/UI Designer" pic="haw.png" :descr=haw_descr>
+            </BigCard>
+            <BigCard name="Yong Sheng" title="Co-founder, Software Engineer" pic="yong.png" :descr=yong_descr>
+            </BigCard>
         </div>
     </div>
 </template>
@@ -30,6 +33,12 @@
         name: "AboutUsPage",
         components: {
             BigCard
+        },
+        data: function () {
+            return {
+                haw_descr: "Haw Foong is a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo vitae magna consequat tincidunt. Fusce euismod, nisl quis aliquet luctus, augue nisi sagittis enim, ut ultrices lacus lorem quis lectus. Phasellus id nunc at justo tincidunt ornare. Quisque sit amet semper eros. Morbi vitae neque et leo malesuada ullamcorper. Mauris vel nisl ut magna aliquam fringilla. In hac habitasse platea dictumst.",
+                yong_descr: "Yong Sheng is a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl ut magna aliquam fringilla. In hac habitasse platea dictumst."
+            }
         }
     }
 </script>

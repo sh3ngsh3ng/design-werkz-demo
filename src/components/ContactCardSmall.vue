@@ -23,7 +23,7 @@
     #contact-card-sm {
         height: 160px;
         background-color: white;
-        padding: 10px;
+        padding: 8px;
     }
 
     #img-div {
