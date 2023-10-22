@@ -8,7 +8,7 @@
             for you so that you can focus on coding and building your million dollar application!</p>
         <p class="body-text">Below is a list of services we provide! </p>
         <div class="accordion" id="accordionExample">
-            <ServiceAccordion text="Testing service 1"></ServiceAccordion>
+            <ServiceAccordion></ServiceAccordion>
         </div>
 
     </div>
