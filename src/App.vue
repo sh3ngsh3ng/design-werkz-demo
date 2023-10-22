@@ -2,7 +2,8 @@
   <div>
     <NavBar></NavBar>
     <!-- <MainPage></MainPage> -->
-    <router-view></router-view>
+    <div id="router-div"><router-view></router-view></div>
+
     <Footer></Footer>
   </div>
 
@@ -23,8 +24,11 @@
 </script>
 
 <style>
+  #router-div {
+    min-height: 60vh;
+  }
+
   .section {
-    /* height: 70vh; */
     padding: 24px;
   }
 
@@ -53,5 +57,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
+  }
+
+  @media screen and (min-width: 728px) {
+    #router-div {
+      min-height: 70vh;
+    }
+
   }
 </style>

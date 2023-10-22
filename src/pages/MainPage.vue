@@ -1,13 +1,19 @@
 <template>
     <div id="main-page">
-        <section id="section-one" class="section">
-            <div id="hero-img-div" class="d-flex justify-content-center"><img src="../assets/hero.png" /></div>
+        <section id="section-one" class="section row g-0">
+            <div class="col-md-6">
+                <div id="hero-img-div" class="d-flex justify-content-center"><img src="../assets/hero.png" /></div>
+            </div>
 
-            <div class="sub-section"><span class="sub-heading">UX/UI Services</span></div>
-            <div class="sub-section"><span class="main-heading">Outsource Design</span></div>
-            <p class="body-text">Let us handle the UI/UX for your software projects! Just focus on coding and building
-                it!</p>
-            <button class="custom-btn" @click="goToPage('/services')">Services</button>
+
+            <div class="col-md-6">
+                <div class="sub-section"><span class="sub-heading">UX/UI Services</span></div>
+                <div class="sub-section"><span class="main-heading">Outsource Design</span></div>
+                <p class="body-text">Let us handle the UI/UX for your software projects! Just focus on coding and
+                    building
+                    it!</p>
+                <button class="custom-btn" @click="goToPage('/services')">Services</button>
+            </div>
         </section>
         <section id="section-two" class="section">
             <div class="sub-section"><span class="sub-heading">Meet the Team</span></div>
@@ -15,12 +21,15 @@
             <p class="body-text">Meet our 2 co-founders, Haw Foong and Yong Sheng! From army buddies to business
                 partners!
             </p>
-            <div id="contact-card-div" class="container row sub-section">
-                <ContactCardSmall name="Haw Foong" job="UI/UX Designer" title="Co-founder" pic="haw.png">
-                </ContactCardSmall>
-                <div class="col-1"></div>
-                <ContactCardSmall name="Yong Sheng" job="Software Engineer" title="Co-founder" pic="yong.png">
-                </ContactCardSmall>
+            <div id="contact-card-div" class="sub-section">
+                <div class="d-flex justify-content-around">
+                    <ContactCardSmall name="Haw Foong" job="UI/UX Designer" title="Co-founder" pic="haw.png">
+                    </ContactCardSmall>
+                    <div class="p-1"></div>
+                    <ContactCardSmall name="Yong Sheng" job="Software Engineer" title="Co-founder" pic="yong.png">
+                    </ContactCardSmall>
+                </div>
+
             </div>
             <button class="custom-btn" @click="goToPage('/about')"><span>Read more about the team here</span></button>
         </section>

@@ -1,9 +1,21 @@
 <template>
-    <div id="contact-card-sm" class="col">
-        <div id="img-div" class="d-flex justify-content-center"><img :src="getImgUrl(pic)" v-bind:alt="pic" /></div>
-        <div id="name-div" class="d-flex justify-content-center"><span class="card-sm-text">{{name}}</span></div>
-        <!-- <div id="job-div">{{job}}</div> -->
-        <div id="title-div-sm" class="d-flex justify-content-center"><span class="card-sm-text">{{title}}</span></div>
+    <div id="contact-card-sm" class="col d-md-flex">
+        <div class="d-flex justify-content-center col-md-6 align-items-center">
+            <div>
+                <img :src="getImgUrl(pic)" v-bind:alt="pic" />
+            </div>
+        </div>
+        <div id="info-div" class="col-md-6 d-md-flex justify-content-center align-items-center">
+            <div class="row">
+                <div id="name-div" class="col-12 d-flex justify-content-center"><span
+                        class="card-sm-text">{{name}}</span>
+                </div>
+                <div id="title-div-sm" class="col-12 d-flex justify-content-center"><span
+                        class="card-sm-text">{{title}}</span>
+                </div>
+            </div>
+
+        </div>
     </div>
 </template>
 

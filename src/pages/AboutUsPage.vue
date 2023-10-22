@@ -1,29 +1,44 @@
 <template>
     <div id="about-us-page" class="section">
-        <div class="sub-section"><span class="sub-heading">Meet the Team</span></div>
-        <div class="sub-section"><span class="main-heading">Our Story</span></div>
-        <p class="body-text">
-            A common challenge amongst Software Developers is UI/UX Design. It is common for
-            developers to
-            have many ideas for side projects but lack the ability in creating attractive and user-friendly interfaces.
-            This is a
-            common obstacle for many developers, discouraging them from pursuing their projects. One can only wonder how
-            many wonderful software projects have been
-            killed because of this!
-        </p>
-        <p class="body-text">
-            With this pain point in mind, our founders came together to tackle this challenge. They brought their
-            expertise and skillsets to WebFrames to provide solutions and support developers with their projects!
-        </p>
-        <p class="body-text">
-            Meet our 2 co-founders of WebFrames!
-        </p>
+        <div class="row">
+            <div id="about-us-hero-div" class="col-md-6 d-md-flex justify-content-center align-items-center">
+                <img src="../assets/team-hero.png" />
+            </div>
+            <div class="col-md-6">
+                <div class="sub-section"><span class="sub-heading">Meet the Team</span></div>
+                <div class="sub-section"><span class="main-heading">Our Story</span></div>
+                <p class="body-text">
+                    A common challenge amongst Software Developers is UI/UX Design. It is common for
+                    developers to
+                    have many ideas for side projects but lack the ability in creating attractive and user-friendly
+                    interfaces.
+                    This is a
+                    common obstacle for many developers, discouraging them from pursuing their projects. One can only
+                    wonder
+                    how
+                    many wonderful software projects have been
+                    killed because of this!
+                </p>
+                <p class="body-text">
+                    With this pain point in mind, our founders came together to tackle this challenge. They brought
+                    their
+                    expertise and skillsets to WebFrames to provide solutions and support developers with their
+                    projects!
+                </p>
+                <p class="body-text">
+                    Meet our 2 co-founders of WebFrames!
+                </p>
+
+            </div>
+        </div>
         <div>
             <BigCard name="Haw Foong" title="Co-founder, UX/UI Designer" pic="haw.png" :descr=haw_descr>
             </BigCard>
             <BigCard name="Yong Sheng" title="Co-founder, Software Engineer" pic="yong.png" :descr=yong_descr>
             </BigCard>
         </div>
+
+
     </div>
 </template>
 
@@ -46,5 +61,15 @@
 <style scoped>
     #about-us-page {
         background-color: #FFF8DF;
+    }
+
+    #about-us-hero-div {
+        display: none;
+    }
+
+    @media screen and (min-width: 728px) {
+        #about-us-hero-div {
+            display: block;
+        }
     }
 </style>

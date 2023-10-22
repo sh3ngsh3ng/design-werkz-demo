@@ -1,21 +1,28 @@
 <template>
-    <div id="contact-card-big" class="col">
-        <div id="img-div" class="sub-div"><img :src="getImgUrl(pic)" v-bind:alt="pic" /></div>
-        <div id="name-div" class="sub-div"><span class="name-text">{{name}}</span></div>
-        <div id="title-div" class="sub-div"><span class="title-text">{{title}}</span></div>
-        <div id="descr-div" class="sub-div"><span class="descr-text">{{descr}}</span></div>
-        <div id="tele-div" class="sub-div d-flex">
-            <div id="tele-icon"><img src="../assets/telephone.png" /></div>
-            <div id="tele-number">+65 91005019</div>
+    <div id="contact-card-big">
+        <div class="row">
+            <div id="img-div" class="sub-div col-md-6 d-md-flex justify-content-center align-items-center"><img
+                    :src="getImgUrl(pic)" v-bind:alt="pic" /></div>
+            <div id="info-div" class="col-md-6">
+                <div id="name-div" class="sub-div"><span class="name-text">{{name}}</span></div>
+                <div id="title-div" class="sub-div"><span class="title-text">{{title}}</span></div>
+                <div id="descr-div" class="sub-div"><span class="descr-text">{{descr}}</span></div>
+                <div id="tele-div" class="sub-div d-flex">
+                    <div id="tele-icon"><img src="../assets/telephone.png" /></div>
+                    <div id="tele-number">+65 91005019</div>
+                </div>
+                <div id="email-div" class="sub-div d-flex">
+                    <div id="email-icon"><img src="../assets/email.png" /></div>
+                    <div id="email-addr">designwerkz@yahoo.com.sg</div>
+                </div>
+                <div id="linkedin-div" class="sub-div d-flex">
+                    <div id="linkedin-icon"><img src="../assets/linkedin-2.png" /></div>
+                    <div id="linked-link">www.google.com.sg</div>
+                </div>
+            </div>
+
         </div>
-        <div id="email-div" class="sub-div d-flex">
-            <div id="email-icon"><img src="../assets/email.png" /></div>
-            <div id="email-addr">designwerkz@yahoo.com.sg</div>
-        </div>
-        <div id="linkedin-div" class="sub-div d-flex">
-            <div id="linkedin-icon"><img src="../assets/linkedin-2.png" /></div>
-            <div id="linked-link">www.google.com.sg</div>
-        </div>
+
     </div>
 </template>
 
@@ -37,6 +44,7 @@
         background-color: white;
         padding: 24px;
         margin: 10px 0px;
+        border-radius: 20px;
     }
 
     #img-div {
@@ -58,5 +66,11 @@
 
     .descr-text {
         font-size: 16px;
+    }
+
+    @media screen and (min-width: 728px) {
+        #img-div>img {
+            height: 200px;
+        }
     }
 </style>
