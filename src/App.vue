@@ -64,5 +64,15 @@
       min-height: 70vh;
     }
 
+    .section {
+      padding: 48px;
+    }
+
+  }
+
+  @media screen and (min-width: 1280px) {
+    .section {
+      padding: 96px;
+    }
   }
 </style>

@@ -1,11 +1,11 @@
 <template>
     <div id="contact-card-sm" class="col d-md-flex">
-        <div class="d-flex justify-content-center col-md-6 align-items-center">
+        <div class="d-flex justify-content-center col-md-6 col-lg-4 align-items-center">
             <div>
                 <img :src="getImgUrl(pic)" v-bind:alt="pic" />
             </div>
         </div>
-        <div id="info-div" class="col-md-6 d-md-flex justify-content-center align-items-center">
+        <div id="info-div" class="col-md-6 col-lg-auto d-md-flex justify-content-center align-items-center">
             <div class="row">
                 <div id="name-div" class="col-12 d-flex justify-content-center"><span
                         class="card-sm-text">{{name}}</span>

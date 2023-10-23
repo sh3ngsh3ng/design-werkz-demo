@@ -65,7 +65,7 @@
 
     #section-two {
         background-color: #FFF8DF;
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
 
     .custom-btn {

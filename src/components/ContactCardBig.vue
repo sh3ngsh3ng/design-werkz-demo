@@ -1,9 +1,9 @@
 <template>
     <div id="contact-card-big">
         <div class="row">
-            <div id="img-div" class="sub-div col-md-6 d-md-flex justify-content-center align-items-center"><img
+            <div id="img-div" class="sub-div col-md-6 col-lg-4 d-md-flex justify-content-center align-items-center"><img
                     :src="getImgUrl(pic)" v-bind:alt="pic" /></div>
-            <div id="info-div" class="col-md-6">
+            <div id="info-div" class="col-md-6 col-lg-8">
                 <div id="name-div" class="sub-div"><span class="name-text">{{name}}</span></div>
                 <div id="title-div" class="sub-div"><span class="title-text">{{title}}</span></div>
                 <div id="descr-div" class="sub-div"><span class="descr-text">{{descr}}</span></div>
