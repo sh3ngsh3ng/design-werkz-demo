@@ -6,13 +6,16 @@
             </div>
 
 
-            <div class="col-md-6">
-                <div class="sub-section"><span class="sub-heading">UX/UI Services</span></div>
-                <div class="sub-section"><span class="main-heading">Outsource Design</span></div>
-                <p class="body-text">Let us handle the UI/UX for your software projects! Just focus on coding and
-                    building
-                    it!</p>
-                <button class="custom-btn" @click="goToPage('/services')">Services</button>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <div class="sub-section"><span class="sub-heading">UX/UI Services</span></div>
+                    <div class="sub-section"><span class="main-heading">Outsource Design</span></div>
+                    <p class="body-text">Let us handle the UI/UX for your software projects! Just focus on coding and
+                        building
+                        it!</p>
+                    <button class="custom-btn" @click="goToPage('/services')">Services</button>
+                </div>
+
             </div>
         </section>
         <section id="section-two" class="section">
