@@ -38,6 +38,7 @@
     #portfolio-page {
         background-color: #EDDFFF;
         min-height: 60vh;
+        /* height: 100%; */
     }
 
     #portfolio-descr-div {
@@ -78,7 +79,7 @@
         }
 
         #portfolio-div {
-            height: 40%;
+            height: 40vh;
         }
     }
 </style>
